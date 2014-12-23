@@ -1,0 +1,82 @@
+body{
+ background-color: #f39c12;
+}
+
+#container {
+	width: 360px;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 100px;
+}
+
+#me p{
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 200;
+	font-size: 18px;
+	line-height: 30px;
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#me h1{
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	font-style: 30px;
+	text-align: center;
+	line-height: 40px;
+	color: #FFF;
+	margin-bottom: 40px;
+}
+
+.links	{ 
+	list-style-type: none; 
+	display: table; 
+	margin: 0 0; 
+}
+.links li{ 
+	margin-right: 40px; 
+	float: left; 
+	color: #FFFFFF;
+	font-size: 30px;
+}
+.links li:last-child{ 
+	margin-right: 0; 
+}
+
+a, a:focus{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #e74c3c;
+}
+
+#face{
+	display:block;
+	width: 	100px;
+	height: 100px;
+    margin: 40px auto 40px auto;
+    background: url(../imgs/mike.png);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	#container{
+		width: 300px;
+		padding: 0 10px;
+	}
+	
+	.links li{ 
+		margin-right: 20px;
+	}
+}
+
+
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		#face{
+			background: url(../imgs/mike@2x.png);
+			background-size: 100px 100px;
+		}
+}
