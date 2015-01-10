@@ -1,12 +1,12 @@
 body{
- background-color: #f39c12;
+ background-color: #0075ff;
 }
 
 #container {
 	width: 360px;
 	margin-left: auto;
 	margin-right: auto;	
-	margin-top: 100px;
+	margin-top: auto;
 }
 
 #me p{
@@ -50,7 +50,7 @@ a, a:focus{
 
 a:hover{
 	text-decoration: none;
-	color: #e74c3c;
+	color: rgb(255, 150, 0);
 }
 
 #face{
