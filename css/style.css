@@ -58,7 +58,6 @@ a:hover{
 }
 
 #face{
- background-color: white;  
   background-image: url("../imgs/michael.jpg");  
   background-repeat: no-repeat;  
   background-attachment: scroll; 
