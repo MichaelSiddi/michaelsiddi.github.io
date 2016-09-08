@@ -1,12 +1,12 @@
 body{
- background-color: #f39c12;
+ background-color: #3b5998;
 }
 
 #container {
-	width: 360px;
+	width: 500px;
 	margin-left: auto;
 	margin-right: auto;	
-	margin-top: auto;
+	margin-top: 100px;
 }
 
 #me p{
@@ -16,10 +16,11 @@ body{
 	line-height: 30px;
 	color: #FFF;
 	text-align: center;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
-#me h1{
+#me h1, h2{
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 400;
 	text-align: center;
@@ -32,11 +33,13 @@ body{
 	list-style-type: none; 
 	display: table; 
 	margin: 0 0; 
+		margin-left: 60px;
 }
 .links li{ 
 	margin-right: 40px; 
 	float: left; 
 	color: #FFFFFF;
+		text-align: center;
 	font-size: 30px;
 }
 .links li:last-child{ 
@@ -45,39 +48,28 @@ body{
 
 a, a:focus{
 	color: #FFFFFF;
+    font-weight: bold;
 	text-decoration: none;
 }
 
 a:hover{
 	text-decoration: none;
-	color: #e74c3c;
+	color: #8E0E00;
 }
 
 #face{
-	display:block;
-	width: 	150px;
-	height: 150px;
+ background-color: white;  
+  background-image: url("../imgs/michael.jpg");  
+  background-repeat: no-repeat;  
+  background-attachment: scroll; 
+  	width: 	150px; 
+  		height: 150px;
     margin: 40px auto 40px auto;
     border-radius:50%;
-    overflow:hidden;
-    background: url(../imgs/michael.jpg);
-}
+border:3px solid white;
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	#container{
-		width: 300px;
-		padding: 0 10px;
-	}
-	
-	.links li{ 
-		margin-right: 20px;
-	}
+  background-position: 0% 0%;
+  background-size: contain;
 }
 
 
-@media (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-		#face{
-			background: url(../imgs/michael.jpg);
-			background-size: 150px 150px;
-		}
-}
