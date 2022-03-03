@@ -1,10 +1,23 @@
 {
+  "webcredentials": {
+    "apps": [
+      "D5FPL673XL.com.vivocha.testAppOne"
+    ]
+  },
   "applinks": {
-      "details": [
-            {
-                "appID": "D5FPL673XL.com.vivocha.testAppOne",
-                "paths": [ "*" ]
-            }
-       ]
-   }
+    "apps": [],
+    "details": [{
+      "appID": "D5FPL673XL.com.vivocha.testAppOne",
+      "paths": [
+        "/",
+        "*"
+      ],
+      "appIDs": [
+        "D5FPL673XL.com.vivocha.testAppOne"
+      ],
+      "components": [{
+        "/": "/"
+      }]
+    }]
+  }
 }
