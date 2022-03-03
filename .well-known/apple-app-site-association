@@ -1,15 +1,10 @@
 {
   "applinks": {
       "details": [
-           {
-             "appIDs": [ "D5FPL673XL.com.vivocha.testAppOne" ],
-             "components": [
-               {
-                  "/": "/univlinktest/",
-                  "comment": "Matches any URL whose path starts with /univlinktest/"
-               }
-             ]
-           }
+            {
+                "appID": "D5FPL673XL.com.vivocha.testAppOne",
+                "paths": [ "*" ]
+            }
        ]
    }
 }
