@@ -1,74 +1,90 @@
-body{
- background-color: #3498db;
+body {
+  background-color: #3498db;
+  margin: 0; /* Remove default margin to utilize the full width */
+  padding: 0; /* Remove default padding */
 }
 
 #container {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;	
-	margin-top: 100px;
+  max-width: 100%;
+  padding: 20px; /* Add some padding for better readability on smaller screens */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-#me p{
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 200;
-	font-size: 18px;
-	line-height: 30px;
-	color: #FFF;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 40px;
+#me {
+  text-align: center; /* Center the content */
 }
 
-#me h1, h2{
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	line-height: 40px;
-	color: #FFF;
-	margin-bottom: 40px;
+#face {
+  background-image: url("../imgs/michael.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 150px;
+  height: 150px;
+  margin: 40px auto;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-position: 50% 50%; /* Center the background image */
+  background-size: cover; /* Maintain aspect ratio and cover the container */
 }
 
-.links	{ 
-	list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    width: 276px;
-}
-.links li{ 
-	margin-right: 40px; 
-	float: left; 
-	color: #FFFFFF;
-		text-align: center;
-	font-size: 30px;
-}
-.links li:last-child{ 
-	margin-right: 0; 
+#me p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 200;
+  font-size: 16px; /* Adjust font size for better readability on smaller screens */
+  line-height: 26px; /* Adjust line height for better readability */
+  color: #FFF;
+  text-align: center;
+  margin-top: 20px; /* Adjust margin for better spacing */
+  margin-bottom: 20px; /* Adjust margin for better spacing */
 }
 
-a, a:focus{
-	color: #FFFFFF;
-    font-weight: bold;
-	text-decoration: none;
+#me h1, h2 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 36px; /* Adjust line height for better readability */
+  color: #FFF;
+  margin-bottom: 20px; /* Adjust margin for better spacing */
 }
 
-a:hover{
-	text-decoration: none;
-	color: #8E0E00;
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the links horizontally */
 }
 
-#face{
-  background-image: url("../imgs/michael.jpg");  
-  background-repeat: no-repeat;  
-  background-attachment: scroll; 
-  	width: 	150px; 
-  		height: 150px;
-    margin: 40px auto 40px auto;
-    border-radius:50%;
-border:3px solid white;
-
-  background-position: 0% 0%;
-  background-size: contain;
+.links li {
+  margin-right: 20px; /* Adjust margin for better spacing */
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px; /* Adjust font size for better readability on smaller screens */
 }
 
+a,
+a:focus {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: none;
+  color: #8E0E00;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+  #container {
+    padding: 10px; /* Adjust padding for better readability on smaller screens */
+  }
+
+  #me h1, h2 {
+    font-size: 24px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  .links li {
+    font-size: 18px; /* Adjust font size for better readability on smaller screens */
+  }
+}
