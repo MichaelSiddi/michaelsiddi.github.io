@@ -71,7 +71,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #8E0E00; /* Hover text color */
+  color: #5DADE2; /* Lighter shade of blue for hover text color */
 }
 
 /* Media Query for smaller screens */
