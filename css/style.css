@@ -70,8 +70,8 @@ a:focus {
 }
 
 a:hover {
-  text-decoration: none;
-  color: #8E0E00;
+  background-color: #e0e0e0;
+  color: #333; /* Adjust font color for better contrast on the light gray background */
 }
 
 /* Media Query for smaller screens */
