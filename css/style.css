@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --bg: #e8f2ff;
     --bg-accent: #f9fbff;
@@ -405,4 +406,95 @@ html[data-theme='dark'] .theme-toggle .theme-toggle__thumb {
         --toggle-height: 32px;
         --thumb-size: 26px;
     }
+=======
+body {
+  background-color: #2d77a9;
+  margin: 0; /* Remove default margin to utilize the full width */
+  padding: 0; /* Remove default padding */
+}
+
+#container {
+  max-width: 100%;
+  padding: 20px; /* Add some padding for better readability on smaller screens */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#me {
+  text-align: center; /* Center the content */
+}
+
+#face {
+  background-image: url("../imgs/smikecx2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 150px;
+  height: 150px;
+  margin: 40px auto;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-position: 50% 50%; /* Center the background image */
+  background-size: cover; /* Maintain aspect ratio and cover the container */
+}
+
+#me p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 200;
+  font-size: 16px; /* Adjust font size for better readability on smaller screens */
+  line-height: 26px; /* Adjust line height for better readability */
+  color: #FFF;
+  text-align: center;
+  margin-top: 20px; /* Adjust margin for better spacing */
+  margin-bottom: 20px; /* Adjust margin for better spacing */
+}
+
+#me h1, h2 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 36px; /* Adjust line height for better readability */
+  color: #FFF;
+  margin-bottom: 20px; /* Adjust margin for better spacing */
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for better alignment */
+  justify-content: center; /* Center the links horizontally */
+}
+
+.links li {
+  margin-right: 20px; /* Adjust margin for better spacing */
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px; /* Adjust font size for better readability on smaller screens */
+}
+
+a,
+a:focus {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #5DADE2; /* Lighter shade of blue for hover text color */
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+  #container {
+    padding: 10px; /* Adjust padding for better readability on smaller screens */
+  }
+
+  #me h1, h2 {
+    font-size: 24px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  .links li {
+    font-size: 18px; /* Adjust font size for better readability on smaller screens */
+  }
+>>>>>>> 47d7fca485c0454e1ba7c3dbcbfb82bfcca4ea70
 }
