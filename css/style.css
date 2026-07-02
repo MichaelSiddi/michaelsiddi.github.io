@@ -90,7 +90,7 @@ body {
     opacity: 0;
     pointer-events: none;
     padding: 0;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.35s ease;
 }
 
 .phone.is-opening .screen-app {
@@ -115,10 +115,10 @@ body {
     overflow: hidden;
     background: url('../imgs/mike.jpg') center/cover;
     box-shadow: 0 6px 14px -6px var(--shadow);
-    transition: top 0.5s cubic-bezier(0.22, 0.8, 0.28, 1), left 0.5s cubic-bezier(0.22, 0.8, 0.28, 1),
-        width 0.5s cubic-bezier(0.22, 0.8, 0.28, 1), height 0.5s cubic-bezier(0.22, 0.8, 0.28, 1),
-        border-radius 0.5s cubic-bezier(0.22, 0.8, 0.28, 1),
-        opacity 0.35s ease 0.25s;
+    transition: top 0.32s cubic-bezier(0.22, 0.8, 0.28, 1), left 0.32s cubic-bezier(0.22, 0.8, 0.28, 1),
+        width 0.32s cubic-bezier(0.22, 0.8, 0.28, 1), height 0.32s cubic-bezier(0.22, 0.8, 0.28, 1),
+        border-radius 0.32s cubic-bezier(0.22, 0.8, 0.28, 1),
+        opacity 0.22s ease 0.1s;
 }
 
 .launch-clone::after {
@@ -127,7 +127,7 @@ body {
     inset: 0;
     background: rgba(0, 0, 0, 0.15);
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .launch-clone.is-fading::after {
@@ -202,6 +202,17 @@ body {
     font-size: 0.8rem;
     font-weight: 600;
     flex-shrink: 0;
+}
+
+.app-statusbar__icons {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.app-statusbar__carrier {
+    font-size: 0.7rem;
+    font-weight: 600;
 }
 
 .app-header {
