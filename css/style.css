@@ -520,8 +520,8 @@ body {
 }
 
 .badge--live {
-    background: var(--accent);
-    color: var(--accent-contrast);
+    background: rgba(102, 184, 148, 0.18);
+    color: #66b894;
 }
 
 .badge--archived {
