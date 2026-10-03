@@ -1,15 +1,21 @@
 :root {
     color-scheme: dark;
-    --bg: #0b0d11;
-    --surface: #11141a;
-    --surface-raised: #15181f;
-    --text-primary: #eceef3;
-    --text-secondary: #b2b9c3;
-    --accent: #8facda;
-    --accent-contrast: #08090d;
-    --accent-soft: rgba(143, 172, 218, 0.14);
-    --border: rgba(45, 51, 65, 0.72);
-    --shadow: rgba(0, 0, 0, 0.6);
+    --bg: #10275B;
+    --surface: #1B3972;
+    --surface-raised: #17346B;
+    --text-primary: #F8FAFD;
+    --text-secondary: #CED9E9;
+    --text-muted: #A9BBD4;
+    --accent: #E7EDF6;
+    --accent-contrast: #10275B;
+    --accent-soft: rgba(231, 237, 246, 0.12);
+    --border: rgba(82, 115, 166, 0.72);
+    --border-hover: rgba(231, 237, 246, 0.38);
+    --shadow: rgba(4, 14, 38, 0.5);
+    --display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: 'Geist Mono', 'SF Mono', monospace;
+    --ease: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 * {
@@ -23,8 +29,11 @@ body {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: var(--bg);
+    font-family: var(--sans);
+    background:
+        radial-gradient(ellipse at 65% 15%, rgba(74, 134, 212, 0.4), rgba(27, 57, 114, 0.14) 45%, transparent 72%),
+        var(--bg);
+    -webkit-font-smoothing: antialiased;
     color: var(--text-primary);
     min-height: 100vh;
     display: flex;
@@ -54,6 +63,7 @@ body {
     z-index: 3;
     pointer-events: none;
     user-select: none;
+    filter: drop-shadow(0 28px 36px var(--shadow));
 }
 
 .phone-screen {
@@ -76,12 +86,14 @@ body {
 }
 
 .screen-springboard {
-    background: url('../imgs/springboard-bg.png') center/cover;
+    background:
+        radial-gradient(ellipse at 80% 15%, rgba(74, 134, 212, 0.4), transparent 72%),
+        var(--bg);
     z-index: 2;
 }
 
 .screen-springboard .app-statusbar {
-    color: #1c1c1e;
+    color: var(--text-secondary);
 }
 
 .screen-app {
@@ -211,8 +223,9 @@ body {
 }
 
 .app-statusbar__carrier {
+    font-family: var(--mono);
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .app-header {
@@ -239,10 +252,11 @@ body {
 }
 
 .name {
+    font-family: var(--display);
     font-size: 1.15rem;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.2;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.035em;
     margin: 0;
 }
 
@@ -263,8 +277,7 @@ body {
     align-items: center;
     gap: 0.3rem;
     font-size: 0.72rem;
-    color: var(--text-secondary);
-    opacity: 0.8;
+    color: var(--text-muted);
 }
 
 .app-header__location svg {
@@ -283,22 +296,24 @@ body {
     justify-items: center;
     gap: 0.1rem;
     padding: 0.7rem 0.4rem;
-    border-radius: 12px;
+    border-radius: 16px;
     background: var(--surface-raised);
+    border: 1px solid var(--border);
     text-align: center;
 }
 
 .stats__value {
+    font-family: var(--display);
     font-size: 1.05rem;
-    font-weight: 800;
+    font-weight: 500;
     color: var(--accent);
     letter-spacing: -0.01em;
 }
 
 .stats__label {
     font-size: 0.62rem;
-    color: var(--text-secondary);
-    font-weight: 600;
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 .home-block {
@@ -312,10 +327,11 @@ body {
 }
 
 .home-block__label {
+    font-family: var(--mono);
     font-size: 0.7rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--accent);
     margin: 0 0 0.65rem;
 }
@@ -324,10 +340,8 @@ body {
     margin: 0 0 0.6rem;
     color: var(--text-secondary);
     font-size: 0.88rem;
-    line-height: 1.6;
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
+    line-height: 1.7;
+    text-align: left;
 }
 
 .home-block__text:last-child {
@@ -411,9 +425,10 @@ body {
 }
 
 .tab-title {
+    font-family: var(--display);
     font-size: 1.3rem;
-    font-weight: 800;
-    letter-spacing: -0.01em;
+    font-weight: 500;
+    letter-spacing: -0.03em;
     margin: 1.25rem 0 1.1rem;
 }
 
@@ -429,18 +444,18 @@ body {
     gap: 0.85rem;
     min-height: 74px;
     padding: 0.7rem 0.5rem 0.7rem 0.65rem;
-    border-radius: 14px;
-    background: var(--surface-raised);
+    border-radius: 16px;
+    background: var(--surface);
     border: 1px solid var(--border);
     text-decoration: none;
     color: inherit;
-    transition: border-color 0.15s ease, transform 0.15s ease;
+    transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
 }
 
 .list-row:hover,
 .list-row:focus-visible {
-    border-color: var(--accent);
-    transform: translateY(-1px);
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
 }
 
 .list-row__icon {
@@ -465,18 +480,18 @@ body {
 }
 
 .list-row__icon--mail {
-    background: rgba(102, 184, 148, 0.16);
-    color: #66b894;
+    background: var(--accent-soft);
+    color: var(--accent);
 }
 
 .list-row__icon--doc {
-    background: rgba(232, 168, 92, 0.16);
-    color: #e8a85c;
+    background: var(--accent-soft);
+    color: var(--accent);
 }
 
 .list-row__icon--linkedin {
-    background: rgba(184, 204, 232, 0.16);
-    color: #b8cce8;
+    background: var(--accent-soft);
+    color: var(--accent);
 }
 
 .list-row__body {
@@ -487,7 +502,7 @@ body {
 }
 
 .list-row__title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 0.98rem;
 }
 
@@ -496,7 +511,8 @@ body {
     top: 0.6rem;
     right: 0.65rem;
     font-size: 0.6rem;
-    font-weight: 700;
+    font-family: var(--mono);
+    font-weight: 400;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 0.15rem 0.5rem;
@@ -504,13 +520,13 @@ body {
 }
 
 .badge--live {
-    background: rgba(102, 184, 148, 0.18);
-    color: #66b894;
+    background: var(--accent);
+    color: var(--accent-contrast);
 }
 
 .badge--archived {
-    background: rgba(178, 185, 195, 0.16);
-    color: var(--text-secondary);
+    background: var(--accent-soft);
+    color: var(--text-muted);
 }
 
 .list-row__desc {
@@ -591,6 +607,13 @@ body {
 
 .tab-bar__item.is-active {
     color: var(--accent);
+}
+
+.springboard-icon:focus-visible,
+.tab-bar__item:focus-visible,
+.list-row:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
 }
 
 .smilecx-trigger {
