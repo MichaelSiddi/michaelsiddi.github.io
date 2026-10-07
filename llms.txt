@@ -1,0 +1,26 @@
+# Michael Siddi
+
+> Mobile Development Manager at Smile.CX, based in Turin, Italy. 15+ years building iOS and Android apps and mobile SDKs, with apps ranked #1 on the App Store and Google Play.
+
+Born in Sardinia, based in Turin, splitting time between Turin and Cagliari. Currently leading a team building a new app that combines communication and customer care tools with AI at its core.
+
+## Experience
+
+- Smile.CX: Mobile Development Manager (current)
+- CoderStreet: CTO & Co-Founder
+- ShopFully: Mobile Architect
+- Vivocha: Lead Mobile Developer
+- Tiscali: iOS Developer
+
+## Projects
+
+- [Lunette](https://www.lunetteapp.com): iOS app for watch collectors. Catalog timepieces, track wear and timing accuracy, log service history.
+- [PoettoApp](https://www.lanuovasardegna.it/cagliari/cronaca/2015/08/06/news/cagliari-poetto-app-tutto-sulla-spiaggia-dei-centomila-1.11894507): app for Poetto beach in Cagliari (archived).
+
+## Links
+
+- [Website](https://www.michaelsiddi.com/)
+- [Résumé (PDF)](https://www.michaelsiddi.com/files/MichaelSiddi_Resume.pdf)
+- [LinkedIn](https://www.linkedin.com/in/michaelsiddi)
+- [GitHub](https://github.com/MichaelSiddi)
+- Email: hi@michaelsiddi.com
